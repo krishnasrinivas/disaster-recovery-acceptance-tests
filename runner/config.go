@@ -12,6 +12,9 @@ type CloudFoundryConfig struct {
 	NFSBrokerUser                     string `json:"nfs_broker_user,omitempty"`
 	NFSBrokerPassword                 string `json:"nfs_broker_password,omitempty"`
 	NFSBrokerUrl                      string `json:"nfs_broker_url,omitempty"`
+	MinioEndpoint                     string `json:"minio_endpoint"`
+	MinioAccessKey                    string `json:"minio_access_key"`
+	MinioSecretKey                    string `json:"minio_secret_key"`
 	NotificationsTemplateClientID     string
 	NotificationsTemplateClientSecret string
 }

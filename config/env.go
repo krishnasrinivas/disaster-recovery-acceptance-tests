@@ -28,6 +28,9 @@ func FromEnv() (runner.Config, runner.TestCaseFilter) {
 	deploymentConfig.NFSBrokerUser = os.Getenv("NFS_BROKER_USER")
 	deploymentConfig.NFSBrokerPassword = os.Getenv("NFS_BROKER_PASSWORD")
 	deploymentConfig.NFSBrokerUrl = os.Getenv("NFS_BROKER_URL")
+	deploymentConfig.MinioEndpoint = os.Getenv("MINIO_ENDPOINT")
+	deploymentConfig.MinioAccessKey = os.Getenv("MINIO_ACCESS_KEY")
+	deploymentConfig.MinioSecretKey = os.Getenv("MINIO_SECRET_KEY")
 
 	timeout := TimeoutFromEnv()
 
